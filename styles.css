@@ -386,6 +386,14 @@ input {
   max-width: 280px;
 }
 
+.line-break {
+  display: block;
+}
+
+.accent-text {
+  color: #82f0b8;
+}
+
 .login-copy p {
   max-width: 250px;
   line-height: 1.65;
@@ -413,11 +421,11 @@ input {
 
 .login-card {
   position: relative;
-  margin-top: 22px;
-  padding: 28px 18px 26px;
+  margin: 22px -24px -28px;
+  padding: 30px 24px 32px;
   background: white;
   color: var(--text);
-  border-radius: 28px;
+  border-radius: 0;
   box-shadow: 0 20px 50px rgba(6, 40, 108, 0.12);
 }
 
@@ -447,6 +455,25 @@ input {
   font-weight: 800;
 }
 
+.field-header {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.field-header em {
+  font-style: normal;
+}
+
+.field-header a {
+  color: var(--blue);
+  font-size: 0.72rem;
+  letter-spacing: 0;
+  text-transform: none;
+  text-decoration: none;
+}
+
 .login-card input {
   width: 100%;
   padding: 15px 16px;
@@ -454,11 +481,114 @@ input {
   background: #f3f6fb;
 }
 
-.mini-note {
-  margin-top: 14px;
-  color: var(--green);
-  font-size: 0.84rem;
+.auth-divider {
+  position: relative;
+  margin: 20px 0 18px;
   text-align: center;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 26%;
+  height: 1px;
+  background: #e4eaf3;
+}
+
+.auth-divider::before {
+  left: 0;
+}
+
+.auth-divider::after {
+  right: 0;
+}
+
+.auth-divider span {
+  display: inline-block;
+  padding: 0 10px;
+  background: white;
+  color: #8b95a6;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.auth-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.auth-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 52px;
+  border-radius: 12px;
+  border: 1px solid #d9e1ed;
+  background: white;
+  color: #212939;
+  font-weight: 700;
+}
+
+.auth-badge {
+  width: 20px;
+  height: 20px;
+  display: grid;
+  place-items: center;
+  border-radius: 4px;
+  background: #111827;
+  color: white;
+  font-size: 0.72rem;
+}
+
+.auth-badge-apple {
+  background: #d8dde8;
+  color: #111827;
+}
+
+.mini-note {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  margin: 0 auto 20px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: #eef2f7;
+  color: #4d596c;
+  font-size: 0.84rem;
+  box-shadow: 0 10px 24px rgba(17, 41, 89, 0.08);
+}
+
+.mini-note-icon {
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(28, 188, 112, 0.14);
+  color: #149159;
+  font-weight: 900;
+}
+
+.signup-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #556173;
+}
+
+.signup-row a {
+  color: var(--blue);
+  text-decoration: none;
+  font-weight: 800;
 }
 
 .app-screen {
@@ -1348,7 +1478,7 @@ input {
   margin: 0 auto 16px;
   border-radius: 18px;
   object-fit: cover;
-  object-position: center;
+  object-position: center 28%;
   display: block;
   background: #eef2f7;
 }
