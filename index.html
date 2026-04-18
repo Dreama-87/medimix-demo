@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MediMix App Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-left"></div>
+    <div class="ambient ambient-right"></div>
+
+    <div class="page-shell">
+      <header class="hero">
+        <section class="hero-copy">
+          <p class="eyebrow">Clinical App Demo</p>
+          <h1>MediMix</h1>
+          <p class="hero-text">
+            A clickable prototype based on your UI designs, covering eight core
+            screens across login, medication analysis, risk results, physician
+            support, consultation, and profile history.
+          </p>
+
+          <div class="hero-actions">
+            <button class="primary-btn" data-jump="demo">Open Demo</button>
+            <button class="secondary-btn" data-jump="journey">View Journey</button>
+          </div>
+
+          <div class="hero-metrics">
+            <article>
+              <span>8</span>
+              <p>Core Screens</p>
+            </article>
+            <article>
+              <span>7</span>
+              <p>Journey Steps</p>
+            </article>
+            <article>
+              <span>1</span>
+              <p>Shareable Prototype</p>
+            </article>
+          </div>
+
+          <div class="hero-panel">
+            <p class="panel-tag">Demo Scope</p>
+            <h2>From first concern to escalation support and history review.</h2>
+            <p>
+              This version focuses on trust, decision support, and high-risk
+              escalation, making it suitable for internal reviews, client demos,
+              and investor storytelling.
+            </p>
+          </div>
+        </section>
+
+        <section class="device-stage" id="demo">
+          <div class="device-frame">
+            <div class="device-header">
+              <span class="camera-dot"></span>
+              <span class="speaker"></span>
+            </div>
+
+            <div class="screen active login-screen" data-screen="login">
+              <div class="boot-splash" aria-hidden="true">
+                <div class="boot-brand">
+                  <span class="brand-mark">✚</span>
+                  <span>MediMix</span>
+                </div>
+                <div class="boot-ring"></div>
+                <p>Loading clinical workspace...</p>
+              </div>
+              <div class="login-gradient"></div>
+              <div class="brand brand-light">
+                <span class="brand-mark">✚</span>
+                <span>MediMix</span>
+              </div>
+              <div class="login-copy">
+                <h2>Authoritative Serenity in Healthcare.</h2>
+                <p>
+                  Advanced clinical intelligence for pharmaceutical
+                  interactions and safety analytics.
+                </p>
+              </div>
+              <div class="stats-row light-stats">
+                <div>
+                  <strong>2k+</strong>
+                  <span>Verified</span>
+                </div>
+                <div>
+                  <strong>99%</strong>
+                  <span>Safety</span>
+                </div>
+              </div>
+              <div class="login-card">
+                <h3>Welcome Back</h3>
+                <p>Please enter your clinical credentials to continue.</p>
+                <label>
+                  <span>Professional Username</span>
+                  <input type="text" placeholder="e.g. dr_alex_river" />
+                </label>
+                <label>
+                  <span>Secure Password</span>
+                  <input type="password" placeholder=".........." />
+                </label>
+                <button class="primary-btn full-width" data-next="home">
+                  Sign In
+                </button>
+                <div class="mini-note">HIPAA &amp; GDPR compliant environment</div>
+              </div>
+            </div>
+
+            <div class="screen app-screen" data-screen="home">
+              <div class="app-top">
+                <div class="brand">
+                  <span class="brand-mark">✚</span>
+                  <span>MediMix</span>
+                </div>
+                <div class="mini-avatar">👩🏻‍⚕️</div>
+              </div>
+              <span class="chip chip-green">Clinical Grade Intelligence</span>
+              <h2 class="headline">
+                Verify your <span>medications</span> with authority.
+              </h2>
+              <p class="subtext">
+                Access real-time safety data, contraindications, and specialist
+                insights with the Clinical Curator's precision tools.
+              </p>
+
+              <div class="search-card">
+                <label for="med-search">Enter medication name</label>
+                <input
+                  id="med-search"
+                  class="search-input"
+                  type="text"
+                  placeholder="e.g. Lisinopril or Atorvastatin"
+                />
+                <button class="primary-btn full-width" data-next="input">
+                  Next Step
+                </button>
+              </div>
+
+              <div class="partner-strip">
+                <span>Clinical Partners</span>
+                <div class="partner-icons">
+                  <i></i>
+                  <i></i>
+                  <i></i>
+                </div>
+              </div>
+
+              <div class="section-header">
+                <div>
+                  <h3>Trending Searches</h3>
+                  <p>Real-time clinical interest data</p>
+                </div>
+                <span class="chip chip-mint">Live Now</span>
+              </div>
+
+              <div class="trend-grid">
+                <article><strong>01</strong><h4>Metformin</h4><p>Type 2 Diabetes Safety</p></article>
+                <article><strong>02</strong><h4>Ozempic</h4><p>Side Effect Analysis</p></article>
+                <article><strong>03</strong><h4>Paxlovid</h4><p>Drug Interactions</p></article>
+                <article><strong>04</strong><h4>Amoxicillin</h4><p>Pediatric Dosage</p></article>
+                <article><strong>05</strong><h4>Lisinopril</h4><p>Heart Health Status</p></article>
+                <article><strong>06</strong><h4>Gabapentin</h4><p>Neuropathy Insights</p></article>
+              </div>
+            </div>
+
+            <div class="screen app-screen" data-screen="input">
+              <div class="app-top">
+                <div class="brand">
+                  <span class="brand-mark">✚</span>
+                  <span>MediMix</span>
+                </div>
+                <div class="mini-avatar">👨🏽‍⚕️</div>
+              </div>
+              <h2 class="page-title">Interaction Analysis</h2>
+              <p class="page-copy">
+                Input your current intake to check for pharmaceutical conflicts.
+              </p>
+
+              <div class="stack-card" data-category="medications">
+                <div class="stack-head">
+                  <h3>Medications</h3>
+                  <button type="button" class="add-toggle" data-category-toggle="medications">+</button>
+                </div>
+                <div class="selection-list" data-selection-list="medications">
+                  <div class="pill-row"><span>Lisinopril</span><em>10mg</em></div>
+                </div>
+                <p class="helper-copy">Add another prescription...</p>
+                <div class="option-panel" data-option-panel="medications" hidden>
+                  <button type="button" class="option-chip" data-category-option="medications" data-label="Warfarin" data-meta="5mg">Warfarin 5mg</button>
+                  <button type="button" class="option-chip" data-category-option="medications" data-label="Ibuprofen" data-meta="200mg">Ibuprofen 200mg</button>
+                  <button type="button" class="option-chip" data-category-option="medications" data-label="Amoxicillin" data-meta="500mg">Amoxicillin 500mg</button>
+                </div>
+              </div>
+              <div class="stack-card" data-category="supplements">
+                <div class="stack-head">
+                  <h3>Supplements</h3>
+                  <button type="button" class="add-toggle" data-category-toggle="supplements">+</button>
+                </div>
+                <div class="selection-list" data-selection-list="supplements">
+                  <div class="pill-row"><span>Vitamin D3</span><em>2000 IU</em></div>
+                  <div class="pill-row"><span>Magnesium Glycinate</span><em>400mg</em></div>
+                </div>
+                <div class="option-panel" data-option-panel="supplements" hidden>
+                  <button type="button" class="option-chip" data-category-option="supplements" data-label="Omega-3" data-meta="1000mg">Omega-3 1000mg</button>
+                  <button type="button" class="option-chip" data-category-option="supplements" data-label="Probiotic" data-meta="1 capsule">Probiotic</button>
+                  <button type="button" class="option-chip" data-category-option="supplements" data-label="Iron" data-meta="18mg">Iron 18mg</button>
+                </div>
+              </div>
+              <div class="stack-card" data-category="food">
+                <div class="stack-head">
+                  <h3>Food</h3>
+                  <button type="button" class="add-toggle" data-category-toggle="food">+</button>
+                </div>
+                <div class="inline-tags selection-tags" data-selection-list="food">
+                  <span>Grapefruit</span>
+                </div>
+                <p class="helper-copy">Tap + to add another food item.</p>
+                <div class="option-panel" data-option-panel="food" hidden>
+                  <button type="button" class="option-chip" data-category-option="food" data-label="Leafy Greens">Leafy Greens</button>
+                  <button type="button" class="option-chip" data-category-option="food" data-label="Aged Cheese">Aged Cheese</button>
+                  <button type="button" class="option-chip" data-category-option="food" data-label="Banana">Banana</button>
+                </div>
+              </div>
+              <div class="stack-card" data-category="beverages">
+                <div class="stack-head">
+                  <h3>Beverages</h3>
+                  <button type="button" class="add-toggle" data-category-toggle="beverages">+</button>
+                </div>
+                <div class="inline-tags selection-tags" data-selection-list="beverages">
+                  <span>Espresso</span>
+                </div>
+                <p class="helper-copy">Tap + to add another beverage.</p>
+                <div class="option-panel" data-option-panel="beverages" hidden>
+                  <button type="button" class="option-chip" data-category-option="beverages" data-label="Green Tea">Green Tea</button>
+                  <button type="button" class="option-chip" data-category-option="beverages" data-label="Orange Juice">Orange Juice</button>
+                  <button type="button" class="option-chip" data-category-option="beverages" data-label="Red Wine">Red Wine</button>
+                </div>
+              </div>
+
+              <div class="context-block">
+                <div class="section-header small-gap">
+                  <div>
+                    <h3>Personal Context</h3>
+                    <p>Required for precision</p>
+                  </div>
+                </div>
+                <div class="context-grid">
+                  <button type="button" class="context-toggle">Driving</button>
+                  <button type="button" class="context-toggle active">Empty Stomach</button>
+                  <button type="button" class="context-toggle">Stomach Sensitivity</button>
+                  <button type="button" class="context-toggle">Caffeine Habits</button>
+                </div>
+              </div>
+
+              <button class="primary-btn full-width" data-next="result">
+                Analyze Now
+              </button>
+            </div>
+
+            <div class="screen app-screen" data-screen="result">
+              <div class="app-top result-top">
+                <div class="brand">
+                  <span class="brand-mark">✚</span>
+                  <span>MediMix</span>
+                </div>
+                <div class="mini-avatar">👩🏽‍⚕️</div>
+              </div>
+              <p class="eyebrow blue-text">Interaction Report</p>
+              <h2 class="page-title">Analysis Result</h2>
+              <p class="page-copy">
+                We've cross-referenced your medication combination against our
+                clinical database.
+              </p>
+
+              <div class="risk-card">
+                <span>Current Status</span>
+                <h3>Moderate Risk</h3>
+                <p>
+                  Interaction detected between components. Close monitoring advised
+                  during the first 48 hours.
+                </p>
+                <div class="risk-meter">
+                  <b class="green"></b><b class="amber"></b><b class="fade"></b>
+                </div>
+              </div>
+
+              <div class="risk-tags">
+                <div><strong>Drowsiness Risk</strong><span class="high">High</span></div>
+                <div><strong>Liver Stress</strong><span class="moderate">Moderate</span></div>
+                <div><strong>Gastric Distress</strong><span class="low">Low</span></div>
+              </div>
+
+              <div class="analysis-card">
+                <h3>Clinical Analysis Details</h3>
+                <article>
+                  <h4>Primary Interaction Findings</h4>
+                  <p>
+                    Combined CNS depressant load may elevate sedation response and
+                    reduce motor coordination in early dosage windows.
+                  </p>
+                </article>
+                <article>
+                  <h4>Recommended Precautionary Measures</h4>
+                  <p>
+                    Avoid driving, monitor early symptoms, and separate dosage timing
+                    where clinically appropriate.
+                  </p>
+                </article>
+                <button class="primary-btn full-width" data-next="detail">
+                  Save Result
+                </button>
+                <button class="secondary-btn full-width result-secondary" data-next="input">
+                  Edit Combo
+                </button>
+                <button class="text-link-btn" data-next="detail">
+                  View More Details →
+                </button>
+              </div>
+
+              <div class="info-banner teal-banner">
+                <div class="banner-icon">⚗</div>
+                <div>
+                  <span>Study Match</span>
+                  <strong>98% Data Accuracy</strong>
+                </div>
+              </div>
+
+              <div class="info-banner mint-banner">
+                <div class="banner-icon">✺</div>
+                <div>
+                  <span>Review Status</span>
+                  <strong>FDA Baseline Cross</strong>
+                </div>
+              </div>
+
+              <button class="floating-share" type="button" aria-label="Share result">
+                ↗
+              </button>
+            </div>
+
+            <div class="screen app-screen" data-screen="detail">
+              <div class="app-top detail-top">
+                <button type="button" class="icon-btn" data-next="result">←</button>
+                <div class="brand">
+                  <span>MediMix</span>
+                </div>
+                <div class="detail-top-actions">
+                  <button type="button" class="icon-btn">↗</button>
+                  <div class="mini-avatar">👨🏻‍⚕️</div>
+                </div>
+              </div>
+              <span class="chip chip-alert">Major Interaction</span>
+              <h2 class="page-title compact-title">Warfarin + Ibuprofen</h2>
+              <button type="button" class="save-chip">🔖 Save</button>
+
+              <div class="detail-card">
+                <h3>How They Interact</h3>
+                <p>
+                  Combining these medications significantly increases the risk of
+                  serious internal bleeding. Ibuprofen inhibits platelet function
+                  while Warfarin slows the clotting process.
+                </p>
+              </div>
+
+              <div class="alert-panel">
+                <span>Risk Level</span>
+                <strong>HIGH</strong>
+                <p>Avoid combination unless specifically directed by a hematologist.</p>
+              </div>
+
+              <div class="accordion-list">
+                <details>
+                  <summary>
+                    <span class="summary-icon blue-icon">⚗</span>
+                    <span><strong>Ingredient Detail</strong><em>The function of each ingredient and interactions</em></span>
+                  </summary>
+                  <p>Interaction burden is driven by additive anticoagulant effects.</p>
+                </details>
+                <details>
+                  <summary>
+                    <span class="summary-icon red-icon">△</span>
+                    <span><strong>Risk Factors</strong><em>Repeating components, metabolic conflicts and risk explanation</em></span>
+                  </summary>
+                  <p>Prior GI issues, advanced age, and repeat NSAID intake increase risk.</p>
+                </details>
+                <details>
+                  <summary>
+                    <span class="summary-icon teal-icon">👥</span>
+                    <span><strong>Population Advisory</strong><em>Specific guidance for elderly, pediatric, and pregnancy</em></span>
+                  </summary>
+                  <p>Use added caution in pediatric, elderly, and pregnancy cases.</p>
+                </details>
+              </div>
+
+              <div class="doctor-box expanded-box">
+                <h3>When to See a Doctor</h3>
+                <ul>
+                  <li>Unusual bruising or small red spots on the skin</li>
+                  <li>Bleeding gums or persistent nosebleeds</li>
+                  <li>Dark or bloody stools</li>
+                  <li>Severe dizziness or sudden headache</li>
+                </ul>
+              </div>
+
+              <button class="primary-btn full-width" data-next="doctor">
+                Consult a Doctor
+              </button>
+            </div>
+
+            <div class="screen app-screen" data-screen="doctor">
+              <div class="app-top">
+                <div class="brand">
+                  <span class="brand-mark">✚</span>
+                  <span>MediMix</span>
+                </div>
+                <div class="mini-avatar">👩🏼‍⚕️</div>
+              </div>
+              <p class="eyebrow blue-text">Director Mode</p>
+              <h2 class="page-title">Physician Recommendations</h2>
+              <p class="page-copy">
+                Our curated network of board-certified specialists vets your case
+                using clinical excellence and patient-first care.
+              </p>
+
+              <div class="doctor-toolbar">
+                <button type="button" class="toolbar-btn">Filter</button>
+                <button type="button" class="toolbar-btn toolbar-btn-primary">Sort by Rating</button>
+              </div>
+
+              <div class="doctor-card featured">
+                <img
+                  class="doctor-photo featured-photo"
+                  src="./assets/crops/featured-doctor.png"
+                  alt="Dr. Sarah Jenkins"
+                />
+                <div class="doctor-card-body">
+                  <div class="doctor-card-topline">
+                    <span class="chip chip-mint">Highest Rated</span>
+                  </div>
+                  <div class="doctor-rating">★ 4.9 <span>(1,240 reviews)</span></div>
+                  <h3>Dr. Sarah Jenkins</h3>
+                  <p class="doctor-role">Senior Pharmacologist &amp; Internal Medicine</p>
+                  <p class="doctor-quote">
+                    "Pioneering safer prescription protocols through data-driven
+                    clinical analysis and patient-first care models."
+                  </p>
+                  <div class="doctor-meta-chips">
+                    <span>Expertise: Toxicology</span>
+                    <span>15+ Years Exp</span>
+                  </div>
+                  <button class="primary-btn full-width" data-next="consult">
+                    Book Consultation
+                  </button>
+                </div>
+              </div>
+
+              <div class="network-card">
+                <h3>Clinical Network Insights</h3>
+                <p class="network-copy">
+                  Our recommendation engine cross-references physician history with
+                  patient safety outcomes.
+                </p>
+                <div class="network-trust">
+                  <span>Network Trust</span>
+                  <strong>99.2%</strong>
+                </div>
+                <div class="trust-bar"><span></span></div>
+                <div class="network-stats">
+                  <article><span>Verified</span><strong>450+</strong></article>
+                  <article><span>Awards</span><strong>82</strong></article>
+                </div>
+              </div>
+
+              <div class="doctor-list">
+                <h3 class="doctor-list-title">Available Specialists</h3>
+                <article class="doctor-list-card">
+                  <img class="doctor-thumb" src="./assets/crops/doctor-1.png" alt="Dr. Feb Chen" />
+                  <strong>Dr. Feb Chen</strong>
+                  <span>Cardiology Specialist &amp; Drug Interaction Expert</span>
+                  <div class="doctor-list-meta">
+                    <em>★ 4.8</em>
+                    <em>890 Patients</em>
+                    <em class="available">Available Today</em>
+                  </div>
+                  <div class="doctor-list-actions">
+                    <button type="button" class="secondary-action">Profile</button>
+                    <button type="button" class="primary-action" data-next="consult">Consult</button>
+                  </div>
+                </article>
+                <article class="doctor-list-card">
+                  <img class="doctor-thumb" src="./assets/crops/doctor-2.png" alt="Dr. Elena Rodriguez" />
+                  <strong>Dr. Elena Rodriguez</strong>
+                  <span>Endocrinology &amp; Bio-Molecular Safety</span>
+                  <div class="doctor-list-meta">
+                    <em>★ 4.7</em>
+                    <em>1,120 Patients</em>
+                    <em>Next: Tomorrow</em>
+                  </div>
+                  <div class="doctor-list-actions">
+                    <button type="button" class="secondary-action">Profile</button>
+                    <button type="button" class="primary-action" data-next="consult">Consult</button>
+                  </div>
+                </article>
+                <article class="doctor-list-card">
+                  <img class="doctor-thumb" src="./assets/crops/doctor-3.png" alt="Dr. James Wilson" />
+                  <strong>Dr. James Wilson</strong>
+                  <span>Neurologist &amp; Neuro-Pharmacology Advisor</span>
+                  <div class="doctor-list-meta">
+                    <em>★ 4.9</em>
+                    <em>750 Patients</em>
+                    <em class="available">Available Now</em>
+                  </div>
+                  <div class="doctor-list-actions">
+                    <button type="button" class="secondary-action">Profile</button>
+                    <button type="button" class="primary-action" data-next="consult">Consult</button>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <div class="screen app-screen" data-screen="consult">
+              <div class="app-top">
+                <div class="brand">
+                  <span class="brand-mark">✚</span>
+                  <span>MediMix</span>
+                </div>
+                <button class="menu-btn">☰</button>
+              </div>
+
+              <div class="chat-head">
+                <div class="doctor-mini"></div>
+                <div>
+                  <h3>Dr. Feb</h3>
+                  <p>Online • Pharmacology Specialist</p>
+                </div>
+              </div>
+
+              <div class="chat-date">Today, Oct 24</div>
+
+              <div class="chat-stream">
+                <article class="bubble bubble-left">
+                  Hello! I've reviewed your latest analysis regarding the interaction
+                  between your current prescriptions. How can I help clarify these
+                  results today?
+                </article>
+                <article class="bubble bubble-right">
+                  I've been taking aspirin for my heart, but I was recently prescribed
+                  a new NSAID for my knee pain. Are they safe to take together?
+                </article>
+                <article class="bubble bubble-left rich">
+                  Taking aspirin alongside another NSAID increases the risk of gastric
+                  irritation and can reduce the cardiovascular protection aspirin
+                  provides.
+                  <div class="inline-alert">
+                    <strong>Safety Alert</strong>
+                    Concurrent use may amplify adverse effects.
+                  </div>
+                </article>
+              </div>
+
+              <div class="chat-input">
+                <span>Type your medical query here...</span>
+                <button data-next="profile">➜</button>
+              </div>
+            </div>
+
+            <div class="screen app-screen" data-screen="profile">
+              <div class="app-top">
+                <div class="brand">
+                  <span class="brand-mark">✚</span>
+                  <span>MediMix</span>
+                </div>
+                <button class="settings-btn">⚙</button>
+              </div>
+
+              <div class="profile-card">
+                <div class="profile-avatar"></div>
+                <h2 class="page-title compact-title">Dr. Julian Sterling</h2>
+                <p class="user-id">User ID: #MM-8842-X</p>
+                <div class="profile-meta">
+                  <article><strong>Status</strong><span>Verified User</span></article>
+                  <article><strong>Joined</strong><span>Mar 2024</span></article>
+                </div>
+              </div>
+
+              <div class="prefs-card">
+                <div class="section-header small-gap">
+                  <div>
+                    <h3>Health Preferences</h3>
+                    <p>Tailored discovery settings</p>
+                  </div>
+                </div>
+                <div class="tag-stack">
+                  <span class="chip">Personalized Dosage</span>
+                  <span class="chip chip-green">Alert Notifications</span>
+                  <span class="chip chip-soft">Lab Integration</span>
+                  <span class="chip chip-soft">View All</span>
+                </div>
+              </div>
+
+              <div class="library-card">
+                <h3>Favorites</h3>
+                <div class="favorite-row"><span class="icon-heart"></span><p>Chronic Care Plan</p></div>
+                <div class="favorite-row"><span class="icon-star"></span><p>Health Posts / Videos</p></div>
+              </div>
+
+              <div class="history-card">
+                <h3>History</h3>
+                <div><span>Checked: Paracetamol Interactivity</span><em>2h ago</em></div>
+                <div><span>Saved: Genomic Sequencing</span><em>Yesterday</em></div>
+                <div><span>Updated Profile Preferences</span><em>3d ago</em></div>
+              </div>
+
+              <div class="post-card">
+                <span class="eyebrow green-text">New Findings</span>
+                <h3>The Impact of Genomic Sequencing in 2024</h3>
+                <p>
+                  Latest clinical trials show a measurable increase in efficacy for
+                  personalized treatment pathways.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <nav class="screen-nav">
+            <button class="nav-pill active" data-target="login">Login</button>
+            <button class="nav-pill" data-target="home">Home</button>
+            <button class="nav-pill" data-target="input">Input</button>
+            <button class="nav-pill" data-target="result">Result</button>
+            <button class="nav-pill" data-target="detail">Detail</button>
+            <button class="nav-pill" data-target="doctor">Doctor</button>
+            <button class="nav-pill" data-target="consult">Consult</button>
+            <button class="nav-pill" data-target="profile">Profile</button>
+          </nav>
+
+          <div class="flow-strip">
+            <span>Trigger Scene</span>
+            <span>Open App</span>
+            <span>Input Items</span>
+            <span>System Processing</span>
+            <span>View Result</span>
+            <span>Decision Making</span>
+            <span>Escalation / History</span>
+          </div>
+        </section>
+      </header>
+
+      <main>
+        <section class="journey-section" id="journey">
+          <div class="section-heading">
+            <p class="eyebrow">User Journey</p>
+            <h2>This prototype now follows the user journey from concern to action.</h2>
+          </div>
+
+          <div class="journey-grid">
+            <article>
+              <span>01</span>
+              <h3>Trigger Scene</h3>
+              <p>The journey begins with a simple concern: can these medications be taken together?</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Open App</h3>
+              <p>The login screen builds trust and signals that the platform is clinical, reliable, and safe.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Input Items</h3>
+              <p>Users enter medications, supplements, foods, and drinks while seeking confidence in data accuracy.</p>
+            </article>
+            <article>
+              <span>04</span>
+              <h3>System Processing</h3>
+              <p>The analysis step emphasizes intelligent recognition, database matching, and interaction review.</p>
+            </article>
+            <article>
+              <span>05</span>
+              <h3>View Result</h3>
+              <p>The result screen pairs a risk level with action guidance so medical terms feel easier to interpret.</p>
+            </article>
+            <article>
+              <span>06</span>
+              <h3>Decision &amp; Escalation</h3>
+              <p>When risk is elevated, physician consultation helps users move from awareness to next-step action.</p>
+            </article>
+            <article>
+              <span>07</span>
+              <h3>History</h3>
+              <p>Profile and history views support repeat checks, reference behavior, and longer-term retention.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="map-section">
+          <div class="section-heading">
+            <p class="eyebrow">Journey Signals</p>
+            <h2>The emotional signals, pain points, and product opportunities are reflected here too.</h2>
+          </div>
+
+          <div class="map-grid">
+            <article class="map-row">
+              <h3>Think</h3>
+              <div class="map-cards">
+                <div>Can they be used together?</div>
+                <div>Could I have entered the wrong information?</div>
+                <div>What will be the result?</div>
+                <div>What should I do next?</div>
+                <div>It should be easy to check history later.</div>
+              </div>
+            </article>
+
+            <article class="map-row">
+              <h3>Pain Points</h3>
+              <div class="map-cards">
+                <div>Online answers are inconsistent and hard to trust.</div>
+                <div>There is too much information and drug names are easy to mistype.</div>
+                <div>Medical terminology is hard to understand.</div>
+                <div>Being warned is not enough if the next action is still unclear.</div>
+                <div>High-risk boundaries can feel ambiguous.</div>
+              </div>
+            </article>
+
+            <article class="map-row">
+              <h3>Opportunities</h3>
+              <div class="map-cards">
+                <div>Turn vague uncertainty into a clearer judgment.</div>
+                <div>Simplify entry with focused search and smarter recognition.</div>
+                <div>Pair risk levels with concrete action recommendations.</div>
+                <div>Offer guidance and escalation without pretending to diagnose.</div>
+                <div>Use history to support repeated queries and retention.</div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="notes-section">
+          <div class="section-heading">
+            <p class="eyebrow">What We Can Do Next</p>
+            <h2>Next, we can turn this into an even more realistic presentation prototype.</h2>
+          </div>
+
+          <div class="note-list">
+            <article>
+              <h3>Refine the Journey Logic</h3>
+              <p>We can further tune the screen order and branching logic to match your exact business flow.</p>
+            </article>
+            <article>
+              <h3>Replace with Final Product Copy</h3>
+              <p>We can swap the placeholder clinical copy for your final presentation messaging.</p>
+            </article>
+            <article>
+              <h3>Add Richer Prototype Motion</h3>
+              <p>We can layer in transitions, processing states, and consultation moments for a smoother demo narrative.</p>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
