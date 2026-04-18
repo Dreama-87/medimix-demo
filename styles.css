@@ -1478,7 +1478,7 @@ input {
   margin: 0 auto 16px;
   border-radius: 18px;
   object-fit: cover;
-  object-position: center 28%;
+  object-position: center;
   display: block;
   background: #eef2f7;
 }
